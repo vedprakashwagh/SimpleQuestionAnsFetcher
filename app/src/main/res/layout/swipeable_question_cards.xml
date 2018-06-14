@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@color/colorPrimaryDark"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/tv_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:background="@drawable/s_border_subtle"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Question"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/tv_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/s_border_subtle"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Answer"
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+            </LinearLayout>
+        </ScrollView>
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="10dp"
+            android:background="@drawable/circle_layout"
+            android:src="@drawable/next"
+            android:tint="@color/white" />
+
+    </FrameLayout>
+</android.support.v7.widget.CardView>

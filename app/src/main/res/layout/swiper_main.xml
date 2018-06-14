@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+
+    <com.mindorks.placeholderview.SwipePlaceHolderView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swiper_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/corner_layout_back"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/corner_layout"
+        />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_anchorGravity="right|top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:padding="10dp"
+                android:src="@drawable/logo_compressed" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:text="LearnCodeOnline"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ImageView
+        android:id="@+id/iv_ad"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:scaleType="fitXY"
+        android:src="@drawable/ad" />
+
+    <com.budiyev.android.circularprogressbar.CircularProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:animateProgress="true"
+        app:backgroundStrokeColor="@color/colorPrimaryDark"
+        app:backgroundStrokeWidth="4dp"
+        app:drawBackgroundStroke="true"
+        app:foregroundStrokeCap="butt"
+        app:foregroundStrokeColor="#e94a4a"
+        app:foregroundStrokeWidth="5dp"
+        app:indeterminate="true"
+        app:indeterminateMinimumAngle="45"
+        app:indeterminateRotationAnimationDuration="3200"
+        app:indeterminateSweepAnimationDuration="600"
+        app:progressAnimationDuration="3000"
+        app:startAngle="270" />
+</android.support.design.widget.CoordinatorLayout>
